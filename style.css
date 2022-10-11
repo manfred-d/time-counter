@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.home{
+    background: #212121;
+    height: 100vh;
+    position: relative;
+}
+.home .time-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    position: relative;
+}
+.home .time-section .circle{
+    background-color: red;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fefefe;
+}
+.home .circle span{
+    color: #fff132;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+}
+.home .time-section .time-hours,
+.home .time-section .time-mins,
+.home .time-section .time-secs{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    pointer-events: none;
+    user-select: none;
+}
+.home .time-section .ampm{
+    width: 50px;
+    padding: 5px;
+    user-select: none;
+    margin-bottom: 5rem;
+}
+.home .time-section .ampm #ampm{
+    font-size: 26px;
+    color: yellow;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
